@@ -1,38 +1,66 @@
-# [Intern Canada](https://www.interncanada.com "Click this link to checkout The Co-op site universities wanna have"). : The Open Source Canadian Coop Page.
-# https://www.interncanada.com
+# [Intern Canada](https://www.interncanada.com "Click this link to check out the Co-op site universities want to have")
+### The Open Source Canadian Co-op Page
 
-# WHAT IS THIS?
-- This is just a OPEN SOURCE JOB SITE FOR INTERNSHIPS IN CANADA Meaning hopefully other people will contribute to the project and jobs base so that it can become something greaters than what it is now.
-- This app is Currently in the MVP stage and FULLY WORKS COLLECTING AND DISPLAYING ABOVE 1000 Internships!!!! It currently supports text Keyword Search across the title, company, location, and **description(the description is on the company site but i promise the seacrch still works!)** I will soon add partial text, filters, and experiment with semantic AI search option aswell if costs are low enough. The Data collection for jobs is done automaticatlly using a few personally made webscrapping scripts that Extract internship data from big sites, Transform it for my database, and Load it into the website your viewing) pipelines with cron scheduling to run at midnight every night ensuring the job data is ALWAYS live and valid!!!!
+## [Visit Intern Canada](https://www.interncanada.com)
 
-# WHY DID I MAKE THIS?
-- WHAT A GREAAATTTTTTT QUESTION!!! If you have used a university Co-op site you know exactly why. The jobs pages have a general trend to be outdated as my grandmother. My schools job page was a table so big it didnt fit on any screen... with no search features... all for limited jobs...this was discouraging to say the least but it motivated me to make something better and that is this job site! (Not to say school coop isnt worth it, if you hav the money and can get a job it 100% pays itself off)
+---
 
-# Contact
-- If you would like to suggest a feature please reach out to me and i would love to add it,contact me on any of my social media platforms for the fastest response or mail me at Simonamable@gmail.com !! I look forward to hearing your feedback!!
-  
-# Tech Stack:
-**Frontend:**
-- Next.js
-- Tailwind CSS
-- React MUI
-- Vercel
-**Backend:**
-- Selenium
-- Beautiful Soup
-- MongoDB
-- A Ubuntu VPS/VM 4gb ram
-  
-## About the tech Stack:
-- ***Completxity is the Enemey. Simplicity is your friend. Dogecoin will go to the Moon by Years End  - A Quote By : AI Elon Musk***
-- This is a full stack application with a ETL backend all of which I coded in about ~7-10 solid working days for rerfrence. The frontend was done with next.js and tailwind js which helped my quick development time and improved modularity.
-- Currently the backend is a few selenium webscrapping scripts that are gonna run on a CRON schedule every day at midnight to collect approx ~1500+ Canadian Intership jobs. These raw job internships then undergo some cleaning and unique filterin and get put into a live hosted MongoDB Database which is connected to the frontend. I Could switch to SQL later on but i'm forsee myself updating the data model frequently so i dont see a need or want. 
+## What is this?
 
+This is an **open-source job site for internships in Canada**, meaning that others can hopefully contribute to the project and job listings, helping it grow into something greater. 
 
-# TODO (:
-- Keep this appliction lean, dont add tooo many features we dont acctually need. I like the minimalistic design aporach so I built it lean and clean so its easy to maintain.
-- Add filters for location(somoe locations are very specific so we need some logical tranlation and a extra coloum to address this).
-- Add filters for other attributes deem desirable to filter this can be extensive i just dont know how to add it to the frontend UI in a clean and minimalistic way. Likely just salary once we clean the data layer to get salary consitently. other attributes open aswell is requested
-- **Add a quick feature request button!!!! This just need to be a simple mesage form to help me get more feedback on what needs to be implemented so i can follow the User Centered Design Process.**
-- Add Sort by.
-  
+Currently, the app is in the **MVP (Minimum Viable Product)** stage and is fully functional, collecting and displaying over **1,000 internships**! It currently supports **location search, Various filters, and keyword search** across job titles, companies, locations, and **descriptions** (the full descriptions are on the company's site, but I promise the search still works!). 
+
+Upcoming features include:
+- **More Filters**
+- **Sorting Option**
+- **Semantic AI search** (Really just depending on costs!!).
+
+---
+
+## Why did I make this?
+
+**Great question!**
+
+If you've used a university co-op site, you know why. They often contain outdated job listings, and in my experience, my school's job board was a table so large it didn't fit on any screen, with no search features and very limited jobs...
+
+It was discouraging, to say the least, but it motivated me to create something better—**this job site!**
+
+(Not to say university co-op programs aren't worth it, they absolutely are if you can afford them and once you secure a good job, They pay for themselves mmultiple times over!)
+
+---
+
+## Contact
+
+If you'd like to suggest a feature or have any feedback, feel free to reach out! You can contact me via social media for a quick response or email me at **SimonAmable@gmail.com**. I look forward to hearing from you!
+
+---
+
+## Tech Stack
+
+- **Next.js**
+- **Tailwind CSS**
+- **React MUI**
+- **Vercel**
+- **MongoDB**
+## Backend
+- ��������
+- �������
+- ��������� ����
+- �� ������ ��� ��
+
+---
+
+## About the Tech Stack
+
+> **"Complexity is the enemy. Simplicity is your friend. Dogecoin will go to the moon by year's end."**  
+> *– AI-generated Elon Musk*
+
+---
+
+## TODO
+
+- **Keep it lean:** Avoid adding unnecessary features. I like the minimalistic design approach, and the app is built to be clean and easy to maintain.
+- **Add filters for other attributes:** Potential filters could include salary once the data layer is cleaned to ensure consistent salary information. Additional attributes can be added based on user requests.
+- **Add a quick feature request button:** This could be a simple message form that helps gather feedback. I don't want users to have to visit another site to contact me.
+- **Add "Sort by" functionality.**
