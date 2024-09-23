@@ -25,12 +25,12 @@ const Header = () => {
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtBLHJW0hnYMF7jBwgtiF0pyhfztkKVmlqaBQ1Dq-Ds-Bdvg/viewform?usp=sf_link" target="_blank" className='py-2 px-2  text-white border rounded hover:opacity-70'>
           Add Job
         </a>
-        <a href="https://github.com/SimonAmable/The-Open-Source-Canadian-Coop-Page" target="_blank" className='flex flex-row  align-middle items-center py-2 px-2 gap-1 text-white border hover:opacity-70 rounded'>
-          {/* <p className='hidden lg:block'>Contribute!</p> */}
+        <a href="https://github.com/SimonAmable/INTERN-CANADA" target="_blank" className='flex flex-row  align-middle items-center py-2 px-2 gap-1 text-white border hover:opacity-70 rounded'>
+          <p className='hidden lg:block'>Contribute!</p>
           <Image src='/github-icon.svg'  className="" title='Open in "GitHub"' alt='Description of the image' width={25} height={25}/>
         </a>
       </div>
-      
+
 
     </div>
   )
