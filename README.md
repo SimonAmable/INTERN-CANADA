@@ -43,11 +43,7 @@ If you'd like to suggest a feature or have any feedback, feel free to reach out!
 - **React MUI**
 - **Vercel**
 - **MongoDB**
-## Backend
-- ��������
-- �������
-- ��������� ����
-- �� ������ ��� ��
+
 
 ---
 
@@ -55,7 +51,7 @@ If you'd like to suggest a feature or have any feedback, feel free to reach out!
 
 > **"Complexity is the enemy. Simplicity is your friend. Dogecoin will go to the moon by year's end."**  
 > *– AI-generated Elon Musk*
-
+- i kept it simple to keep development and iteration time short.
 ---
 
 ## TODO
