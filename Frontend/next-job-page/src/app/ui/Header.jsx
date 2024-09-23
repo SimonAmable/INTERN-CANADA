@@ -20,7 +20,7 @@ const Header = () => {
         <Link href = "#contact" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> Contact </p></Link>
 
       </div>
-
+ 
       <div className='flex-row flex gap-2 items-center min-w-20'>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtBLHJW0hnYMF7jBwgtiF0pyhfztkKVmlqaBQ1Dq-Ds-Bdvg/viewform?usp=sf_link" target="_blank" className='py-2 px-2  text-white border rounded hover:opacity-70'>
           Add Job
