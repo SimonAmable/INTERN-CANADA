@@ -1,5 +1,6 @@
-# INTERNSHIPS EH : The Open Source Canadian Coop Page.
-https://theopensourcecanadiancooppage.vercel.app/
+# [Intern Canada](https://www.interncanada.com "Click this link to checkout The Co-op site universities wanna have"). : The Open Source Canadian Coop Page.
+# https://www.interncanada.com
+
 # WHAT IS THIS?
 - This is just a OPEN SOURCE JOB SITE FOR INTERNSHIPS IN CANADA Meaning hopefully other people will contribute to the project and jobs base so that it can become something greaters than what it is now.
 - This app is Currently in the MVP stage and FULLY WORKS COLLECTING AND DISPLAYING ABOVE 1000 Internships!!!! It currently supports text Keyword Search across the title, company, location, and **description(the description is on the company site but i promise the seacrch still works!)** I will soon add partial text, filters, and experiment with semantic AI search option aswell if costs are low enough. The Data collection for jobs is done automaticatlly using a few personally made webscrapping scripts that Extract internship data from big sites, Transform it for my database, and Load it into the website your viewing) pipelines with cron scheduling to run at midnight every night ensuring the job data is ALWAYS live and valid!!!!
