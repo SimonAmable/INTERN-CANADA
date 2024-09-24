@@ -8,21 +8,15 @@ export default function Home() {
         <h1 className="text-xl font-bold pb-5">INTERNSHIPS EH, The Open Source Canadian Internship Page</h1>
 
         <div className="w-full lg:w-5/12">
-            <p>Welcome to INTERNSHIPS EH, your go-to platform for discovering internship opportunities across Canada. This was a personal passionn project dedicated to connecting students and young professionals with meaningful internships that can kickstart their careers.
+            <p>Welcome to <strong> Intern Canada </strong>, your go-to platform for discovering internship opportunities across Canada. 
             <br/>
             <br />
-            In rough socio-economic times, Candian Universities still OVERCHARGE for CO-OP progams with limited jobs and often times questionable sites... 
-            Thats why this site was created.
+            Candian Universities charge upwards of $400+ every 4 month for CO-OP progams with limited jobs and often times questionable sites.... 
+            Thats why this site was created. I wanted to make it easier for students to find internships in Canada and beyond that make it FREE.
             <br/>
             <br/>
-            Our mission is to make the internship search process simpler, more transparent, and accessible for everyone. As an open-source project, I am committed to community-driven development and continuous improvement. I believe in the power of collaboration and innovation to create a more inclusive and effective job market.
-            <br/>
-            <br/>
-            To Accomplish this the creator of this project Simon Amable made it full open source so it could be further developed into something greater by others as a community. 
-            <br/>
-            <br/>
-            Whether you are a student seeking your first opportunity or a professional looking to gain new skills, INTERNSHIPS EH provides a comprehensive and user-friendly platform to help you find the perfect internship. Join us in shaping the future of career development in Canada!</p>
-        </div>
+            </p>
+            </div>
     </div>
   );
 }
