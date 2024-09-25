@@ -5,6 +5,7 @@ import Script from "next/script";
 import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 import Disclaimer from "./ui/Disclaimer";
+import SmallContact from "./ui/SmallContact";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -59,6 +60,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         {/* <Disclaimer/> */}
+        <SmallContact/>
       </body>
     </html>
   );

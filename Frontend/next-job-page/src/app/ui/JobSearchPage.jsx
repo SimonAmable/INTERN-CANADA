@@ -91,9 +91,10 @@ const JobSearchPage = () => {
   const toggleAccordion = (index) => {
     setIsOpen(isOpen === index ? null : index);
   };
-
+//------------------------------Filtering functionality-----------------------------------
   // Handle change for select dropdowns
   const handleFilterChange = (e, category) => {
+    setPage(1); // Reset to the first page when a new filter is selected
     const { value } = e.target;
     setSelectedFilters((prevFilters) => ({
       ...prevFilters,
@@ -115,7 +116,7 @@ const JobSearchPage = () => {
   return (
     <div className='w-full '>
               <div className='w-full'>
-              <div className=' flex items-center justify-center min-h-[170px] lg:min-h-[320px] w-full bg-primary p-5 '>
+              <div className=' flex items-center justify-center min-h-[170px] lg:min-h-[260px] w-full bg-primary p-5 '>
                   <div className="flex flex-col ">
 
                       <h1 className='text-2xl lg:text-4xl font-bold '>Find Your Dream Internship in Canada Today!</h1>

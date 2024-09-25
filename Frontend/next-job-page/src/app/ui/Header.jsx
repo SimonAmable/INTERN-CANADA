@@ -4,20 +4,20 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-    <div className='bg-primary w-full flex flex-row justify-between p-2 text-center text-black'>
+    <div className='bg-primary w-full flex flex-row justify-between p-1 text-center text-black'>
 
-      <a href="/" className='flex flex-col items-center gap-0 lg:gap-3 hover:opacity-70 transition-transform font-mono'>
-        <div className='flex flex-row items-center gap-0 lg:gap-3  transition-transform'>
+      <a href="/" className='flex flex-row items-center gap-0 lg:gap-3 hover:opacity-70 transition-transform font-mono'>
           <Image src='/hidden_leaf_black.png' alt='Logo' width={40} height={40} className=''/>
-          <h1 className='capitalize font-bold text-2xl hidden lg:block ' >INTERN CANADA</h1>
-        </div>     
-        <p className='-translate-y-6 text-lg hidden lg:block'>Co-op Made Easy</p> 
+          <div className='flex flex-col items-center'>
+            <h1 className='capitalize font-bold text-2xl hidden lg:block ' >Intern Canada</h1>
+            <p className=' text-lg hidden lg:block text-gray-200'>Co-op Made Easy</p> 
+          </div>
       </a>
 
       <div className='flex flex-row gap-0 lg:gap-2'>
         {/* <Link href = "/" className='flex  items-center'><p className='text-center hover:font-bold justify-center align-middle items-center p-2 text-xl'> Find Jobs</p></Link> */}
         <Link href = "/about" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> About</p></Link>
-        <Link href = "#contact" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> Contact </p></Link>
+        <Link href = "/contact" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> Contact </p></Link>
 
       </div>
  

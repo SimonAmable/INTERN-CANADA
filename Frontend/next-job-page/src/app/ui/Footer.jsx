@@ -3,9 +3,9 @@ import Image from 'next/image'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 const Footer = () => {
   return (
-    <footer id="contact"className='contact flex lg:flex-row flex-col min-h-32 bg-primary justify-between pb-10  p-4 mt-auto'>
+    <footer id="contact"className='contact flex lg:flex-row flex-col min-h-32 bg-primary justify-between  p-4 mt-auto'>
         <div className='flex flex-col gap-1'>
-            <p  className='font-bold text-lg'>Contact Me:</p>
+            <p  className='font-bold text-lg'>Contact:</p>
             {/* <a href="https://github.com/SimonAmable" target="_blank" className='flex flex-row items-center hover:underline'>
                 <Image src="github-icon.svg" cn='' width={30} height={30} alt="Github"/>
                 <p className=''>Github</p>
