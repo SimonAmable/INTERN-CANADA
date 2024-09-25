@@ -10,7 +10,7 @@ const SmallContact = (bg_col) => {
   const handleChange = (e) => {
     setMessage(e.target.value);
   };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
