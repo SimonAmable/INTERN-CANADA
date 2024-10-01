@@ -59,8 +59,8 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
         <Footer/>
-        {/* <Disclaimer/> */}
-        <SmallContact/>
+        {/* <Disclaimer/> 
+        <SmallContact/> */}
       </body>
     </html>
   );
