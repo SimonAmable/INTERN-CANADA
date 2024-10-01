@@ -37,13 +37,15 @@ If you'd like to suggest a feature or have any feedback, feel free to reach out!
 ---
 
 ## Tech Stack
-
+FRONTEND
 - **Next.js**
 - **Tailwind CSS**
 - **React MUI**
 - **Vercel**
 - **MongoDB**
 
+BACKEND
+- Black magic
 
 ---
 
