@@ -47,8 +47,21 @@ export async function GET(request) {
   const conditions = [];
   
   // Add text search condition if keyword is provided
+  // if (keyword) {
+  //   conditions.push({ $text: { $search: keyword } });
+  // }
   if (keyword) {
-    conditions.push({ $text: { $search: keyword } });
+    const words = keyword.split(' ').filter(word => word); // Split keyword into individual words
+    const regexConditions = words.map(word => ({
+      $or: [
+        { description: { $regex: new RegExp(word, 'i') } }, // Case-insensitive regex for description
+        { title: { $regex: new RegExp(word, 'i') } },       // Case-insensitive regex for title
+        { company: { $regex: new RegExp(word, 'i') } }      // Case-insensitive regex for company
+      ]
+    }));
+  
+    // Combine conditions using $or to match any of the words across the specified fields
+    conditions.push({ $and: regexConditions });
   }
   
   // Add regex search condition for location if provided

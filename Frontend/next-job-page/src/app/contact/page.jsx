@@ -36,8 +36,22 @@ const ContactPage = () => {
   return (
     <div className='h-[500px] p-10 flex flex-col items-center gap-3'>
       <h1 className='py-5 font-bold text-3xl'>Contact</h1>
-      {submitted ? <p>Thank you for your message!!!</p> : (
-        
+      {submitted ? (
+        <div className='min-w-60'>
+          <p className='text-center'>Thank you for your message!!!</p>
+          <div style={{ width: '100%', height: 0, paddingBottom: '83%', position: 'relative' }}>
+            <iframe
+              src="https://giphy.com/embed/i21tixUQEE7TEqwmYa"
+              width="100%"
+              height="100%"
+              style={{ position: 'absolute' }}
+              className="giphy-embed"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p><a href="https://giphy.com/gifs/theoffice-nbc-the-office-tv-i21tixUQEE7TEqwmYa">via GIPHY</a></p>
+        </div>
+      ) : (
         <form onSubmit={handleSubmit} className='flex flex-col gap-2 items-center w-full justify-center'>
           <input 
             type="text" 
@@ -46,7 +60,7 @@ const ContactPage = () => {
             onChange={handleChange} 
             placeholder="Name" 
             required
-            className=' border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
+            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
           />
           <input 
             type="email" 
@@ -54,7 +68,7 @@ const ContactPage = () => {
             value={formData.email} 
             onChange={handleChange} 
             placeholder="Email" 
-            className=' border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
+            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
             required 
           />
           <textarea 
@@ -62,10 +76,10 @@ const ContactPage = () => {
             value={formData.message} 
             onChange={handleChange} 
             placeholder="Message" 
-            className=' border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
+            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
             required 
           />
-          <button type="submit" className=' border-2 border-black rounded-3xl px-3 py-1 transform transition-transform duration-300 hover:scale-110'>Send</button>
+          <button type="submit" className='border-2 border-black rounded-3xl px-3 py-1 transform transition-transform duration-300 hover:scale-110'>Send</button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
       )}
