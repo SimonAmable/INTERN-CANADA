@@ -13,6 +13,10 @@ module.exports = {
         // primary: "#FF0000",
         primary: "#ef4444",
       },
+      height: {
+        '80vh': '80vh',
+        '70vh': '70vh',
+      },
     },
   },
   plugins: [],

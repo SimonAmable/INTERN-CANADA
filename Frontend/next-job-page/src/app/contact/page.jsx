@@ -34,7 +34,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className='h-[500px] p-10 flex flex-col items-center gap-3'>
+    <div className='min-h-[80vh] w-full p-5 lg:p-10 flex flex-col items-center gap-3 justify-center'>
       <h1 className='py-5 font-bold text-3xl'>Contact</h1>
       {submitted ? (
         <div className='min-w-60'>
@@ -58,28 +58,30 @@ const ContactPage = () => {
             name="name" 
             value={formData.name} 
             onChange={handleChange} 
-            placeholder="Name" 
-            required
-            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
+            placeholder="Name - Optional" 
+            
+            className='border-gray-400 border-2 rounded-full p-4 w-full lg:w-5/12'
           />
           <input 
             type="email" 
             name="email" 
             value={formData.email} 
             onChange={handleChange} 
-            placeholder="Email" 
-            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
-            required 
+            placeholder="Email - Optional" 
+            className='border-gray-400 border-2 rounded-full p-4 w-full lg:w-5/12'
+             
           />
           <textarea 
             name="message" 
             value={formData.message} 
             onChange={handleChange} 
-            placeholder="Message" 
-            className='border-gray-400 border-2 rounded-3xl p-2 w-10/12 lg:w-5/12'
+            placeholder="Message - Required" 
+            className='border-gray-400 border-2 rounded-3xl p-4 w-full lg:w-5/12'
             required 
           />
-          <button type="submit" className='border-2 border-black rounded-3xl px-3 py-1 transform transition-transform duration-300 hover:scale-110'>Send</button>
+          <div className='flex items-baseline w-full lg:w-5/12'>
+            <button type="submit" className='border-2  border-black rounded-full px-8 p-4 transform transition-transform duration-300 hover:scale-110'>Send</button>
+          </div>
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
       )}

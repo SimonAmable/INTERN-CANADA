@@ -40,3 +40,30 @@ body {
       transform: rotate(359deg);
     }
   }
+
+.fadeIn_animation_class {
+  animation: fadeIn 1s ease;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.fadeDown_animation_class {
+  animation: fadeDown 1s ease;
+} 

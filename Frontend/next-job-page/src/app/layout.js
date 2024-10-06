@@ -57,7 +57,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
         <Header/>
+        <div className="min-h-80vh w-full flex flex-col items-center justify-center">
         {children}
+        </div>
         <Footer/>
         {/* <Disclaimer/> 
         <SmallContact/>*/}

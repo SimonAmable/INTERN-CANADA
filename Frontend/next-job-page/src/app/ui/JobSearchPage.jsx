@@ -154,7 +154,7 @@ const JobSearchPage = () => {
 
 
 
-                                  {showFilters && (<div className="mt-10  right-0 absolute flex flex-col min-w-44 bg-white gap-2 p-1 w-fit border rounded ">
+                                  {showFilters && (<div className="fadeDown_animation_class mt-10  right-0 lg:left-20 absolute flex flex-col min-w-44 bg-white gap-2 p-1 w-fit border rounded ">
                                                   {/* Job Fields */}
                                                   <div className="">
                                                     <label className="block font-semibold ">Field/Category:</label>
@@ -270,7 +270,7 @@ const JobSearchPage = () => {
             
         
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center min-h-[50vh]">
           <div className="flex pt-2 pl-10 self-baseline">
             <p>Number Jobs Found : {currentResultCount}</p>
           </div>
