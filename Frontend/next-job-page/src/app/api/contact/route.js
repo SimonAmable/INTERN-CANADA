@@ -7,7 +7,7 @@ export async function POST(request) {
   try {
     const { name = 'Anonymous', email = 'no-email-provided@example.com', message } = await request.json();
 
-    if (!name || !email || !message) {
+    if ( !message) {
       return NextResponse.json({ error: 'All fields are required' }, { status: 400 });
     }
 

@@ -78,6 +78,7 @@ const ContactPage = () => {
             placeholder="Message - Required" 
             className='border-gray-400 border-2 rounded-3xl p-4 w-full lg:w-5/12'
             required 
+            
           />
           <div className='flex items-baseline w-full lg:w-5/12'>
             <button type="submit" className='border-2  border-black rounded-full px-8 p-4 transform transition-transform duration-300 hover:scale-110'>Send</button>
