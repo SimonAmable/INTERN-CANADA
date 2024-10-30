@@ -1,5 +1,6 @@
-# [Intern Canada](https://www.interncanada.com "Click this link to check out the Co-op site universities want to have")
-### The Open Source Canadian Co-op Page
+# [Intern Canada](https://www.interncanada.com "Click this link to check out the Co-op site universities want to have"), https://www.interncanada.com
+
+### The Open Source Canadian Internship Page
 
 https://www.interncanada.com
 
@@ -12,7 +13,9 @@ This is an **open-source job site for internships in Canada**, meaning that othe
 Currently, the app is in the **MVP (Minimum Viable Product)** stage and is fully functional, collecting and displaying over **1,000 internships**! It currently supports **location search, Various filters, and keyword search** across job titles, companies, locations, and **descriptions** (the full descriptions are on the company's site, but I promise the search still works!). 
 
 Upcoming features include:
-- **More Filters**
+- **More Filters!!**
+- **More jobs!!**
+- **Sumarry viewing once the data model is clean!!**
 - **Sorting Option**
 - **Semantic AI search** (Really just depending on costs!!).
 
@@ -38,14 +41,16 @@ If you'd like to suggest a feature or have any feedback, feel free to reach out!
 
 ## Tech Stack
 FRONTEND
-- **Next.js**
-- **Tailwind CSS**
-- **React MUI**
-- **Vercel**
-- **MongoDB**
+- Next.js
+- Tailwind CSS
+- React MUI
+- Hosting: Vercel
 
 BACKEND
-- Black magic
+- Selenium
+- BeautifulSoup
+- MongoDB
+- Hosting: Ubuntu 2gb vm on some free cloud credits
 
 ---
 
