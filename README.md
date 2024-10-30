@@ -1,7 +1,7 @@
 # [Intern Canada](https://www.interncanada.com "Click this link to check out the Co-op site universities want to have")
 ### The Open Source Canadian Co-op Page
 
-## [Visit Intern Canada](https://www.interncanada.com)
+https://www.interncanada.com
 
 ---
 
