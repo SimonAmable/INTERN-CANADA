@@ -64,6 +64,7 @@ const JobSearchPage = () => {
     if (page < totalPages) {
       const nextPage = page + 1;
       setPage(nextPage);
+      window.scrollTo({ top: 250, behavior: 'auto' });
       // fetchJobs(keyword, nextPage); 
     }
   };
@@ -73,6 +74,8 @@ const JobSearchPage = () => {
     if (page > 1) {
       const prevPage = page - 1;
       setPage(prevPage);
+      window.scrollTo({ top: 250, behavior: 'auto' });
+
       // fetchJobs(keyword, prevPage); # Now triggered by the use effect
     }
   };
