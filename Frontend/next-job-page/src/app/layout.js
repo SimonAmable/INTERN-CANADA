@@ -6,6 +6,8 @@ import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 import Disclaimer from "./ui/Disclaimer";
 import SmallContact from "./ui/SmallContact";
+import FeedbackComponent from "./ui/FeedbackComponent";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -59,8 +61,11 @@ export default function RootLayout({ children }) {
         <Header/>
         <div className="min-h-80vh w-full flex flex-col items-center justify-center">
         {children}
+        <FeedbackComponent/>
         </div>
         <Footer/>
+        
+
         {/* <Disclaimer/> 
         <SmallContact/>*/}
       </body>

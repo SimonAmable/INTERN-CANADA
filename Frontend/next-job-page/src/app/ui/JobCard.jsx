@@ -40,7 +40,7 @@ const JobCard = ({ title, company, location, salary,apply_link,timestamp }) => {
       <a href={apply_link} target='_blank' >
       <div className='flex items-center justify-between'>
         <h1 className='pl-4 pt-4 text-xl lg:text-2xl  font-bold text-black'>{title}</h1>
-        {/* <h1 className='text-gray-400 pr-3 text-sm'>Date: {formattedDate}</h1> */}
+        <h1 className='text-gray-400 pr-3 text-sm'>Date : {formattedDate}</h1>
         {/* <h1 className='pr-4 pt-4 font-bold '> Click To Open</h1> */}
       </div>
       <p className='pl-4 text-gray-700 text-lg'>{company}</p>

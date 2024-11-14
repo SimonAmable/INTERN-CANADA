@@ -16,8 +16,10 @@ const Header = () => {
 
       <div className='flex flex-row gap-0 lg:gap-2'>
         {/* <Link href = "/" className='flex  items-center'><p className='text-center hover:font-bold justify-center align-middle items-center p-2 text-xl'> Find Jobs</p></Link> */}
-        <Link href = "/about" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> About</p></Link>
-        <Link href = "/contact" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> Contact </p></Link>
+        <Link href = "/about" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> About Us</p></Link>
+        {/* <Link href = "/about" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '>✨ Resources (new)✨</p></Link> */}
+
+        {/* <Link href = "/contact" className='flex items-center'><p className='text-center hover:font-semibold justify-center align-middle items-center p-2 text-xl '> Contact </p></Link> */}
 
       </div>
  
@@ -32,6 +34,7 @@ const Header = () => {
       </div>
 
 
+      
     </div>
   )
 }

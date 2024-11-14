@@ -157,7 +157,7 @@ const JobSearchPage = () => {
 
 
 
-                                  {showFilters && (<div className="fadeDown_animation_class mt-10  right-0 lg:left-20 absolute flex flex-col min-w-44 bg-white gap-2 p-1 w-fit border rounded ">
+                                  {showFilters && (<div className=" mt-10  right-0 lg:left-20 absolute flex flex-col min-w-44 bg-white gap-2 p-1 w-fit border rounded ">
                                                   {/* Job Fields */}
                                                   <div className="">
                                                     <label className="block font-semibold ">Field/Category:</label>

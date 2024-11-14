@@ -86,6 +86,7 @@ const ContactPage = () => {
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
       )}
+
     </div>
   );
 };
