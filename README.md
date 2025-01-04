@@ -61,9 +61,10 @@ BACKEND
 - i kept it simple to keep development and iteration time short.
 ---
 
-## TODO
-
-- **Keep it lean:** Avoid adding unnecessary features. I like the minimalistic design approach, and the app is built to be clean and easy to maintain.
-- **Add filters for other attributes:** Potential filters could include salary once the data layer is cleaned to ensure consistent salary information. Additional attributes can be added based on user requests.
-- **Add a quick feature request button:** This could be a simple message form that helps gather feedback. I don't want users to have to visit another site to contact me.
+## TODO/Feature Roadmap:
+- ✅ **Add a quick feature request button:** This could be a simple message form that helps gather feedback. I don't want users to have to visit another page or fill out personal info to request a feature.
+- **Clean Backend and upload on github:**
+- **Make a discord to hopefully get more feedback**
+- **Add Tested Gemeni integration to prod to improve data layer**
 - **Add "Sort by" functionality.**
+- **Add filters for other attributes:** Potential filters could include salary once the data layer is cleaned to ensure consistent salary information. Additional attributes can be added based on user requests.
