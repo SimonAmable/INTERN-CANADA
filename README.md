@@ -10,14 +10,7 @@ https://www.interncanada.com
 
 This is an **open-source job site for internships in Canada**, meaning that others can hopefully contribute to the project and job listings, helping it grow into something greater. 
 
-Currently, the app is in the **MVP (Minimum Viable Product)** stage and is fully functional, collecting and displaying over **1,000 internships**! It currently supports **location search, Various filters, and keyword search** across job titles, companies, locations, and **descriptions** (the full descriptions are on the company's site, but I promise the search still works!). 
-
-Upcoming features include:
-- **More Filters!!**
-- **More jobs!!**
-- **Sumarry viewing once the data model is clean!!**
-- **Sorting Option**
-- **Semantic AI search** (Really just depending on costs!!).
+Currently, the app is in the **MVP (Minimum Viable Product)** stage and is fully functional, collecting and displaying over **1,000 internships**! It currently supports **location search, Various filters, and keyword search** across job titles, companies, locations, and **descriptions** (the full descriptions are on the company's site)
 
 ---
 
