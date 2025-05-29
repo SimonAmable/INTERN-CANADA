@@ -1,0 +1,6 @@
+.env
+data_ingestion/clean/
+data_ingestion/clean/*.csv
+data_ingestion/clean/*.json
+
+venv
