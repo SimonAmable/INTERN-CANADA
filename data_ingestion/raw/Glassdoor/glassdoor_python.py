@@ -206,7 +206,7 @@ print(f"Number of jobs found: {len(all_jobs)}")
 all_job_data = []
 # Iterate through each job listing and extract details
 for job in all_jobs:
-    git remote set-url origin <new-repository-url>    # Initialize variables to prevent undefined reference errors
+    # Initialize variables to prevent undefined reference errors
     current_window = ""
     direct_job_board_raw_html = ""
     
