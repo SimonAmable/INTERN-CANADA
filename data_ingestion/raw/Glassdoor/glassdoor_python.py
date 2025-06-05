@@ -44,9 +44,17 @@ password = os.getenv('GLASSDOOR_PASSWORD')
 mongodb_atlas_uri = os.getenv('MONGODB_ATLAS_URI')
 
 # Initialize MongoDB connection
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient(mongodb_atlas_uri)
 db = client["canadian_intership_database"]
 collection = db['opportunities_glassdoor']
+
+# Check MongoDB connection
+try:
+    client.admin.command('ping')
+    print("MongoDB connection successful!")
+except Exception as e:
+    print(f"MongoDB connection failed: {e}")
+    exit(1)
 
 # Delete all documents in the collection before starting a new ingestion
 timestamp = datetime.now()
@@ -117,7 +125,7 @@ options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) Apple
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 # Uncomment below for headless operation
-# options.add_argument("--headless")
+options.add_argument("--headless")
 options.add_argument("--no-sandbox")  # Bypass OS security model
 options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
 options.add_argument("--disable-gpu")
@@ -176,8 +184,11 @@ while True:
         if show_more_jobs_button.is_displayed():
             actions.move_to_element(show_more_jobs_button).perform()
             show_more_jobs_button.click()
+            print("Clicked 'Show More Jobs' button")
             # time.sleep(0.2)
+            close_overlay(driver)
             handle_possible_popup(driver)
+            
         else:
             break
     except (NoSuchElementException, IndexError):
@@ -191,7 +202,8 @@ time.sleep(2)
 # We have opened all the jobs, now we can get the data
 # Get raw html and save to file
 html = driver.page_source
-with open("./glassdoor_jobs.html", "w", encoding='utf-8') as file:
+glassdoor_jobs_html_filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "glassdoor_jobs.html")
+with open(glassdoor_jobs_html_filepath, "w", encoding='utf-8') as file:
     file.write(html)
 
 # Get all the jobs
@@ -405,7 +417,7 @@ def extract_jobs_from_html(html_file):
     return jobs_data
 
 # Join extracted data with the data we pulled into the collection
-jobs_data = extract_jobs_from_html('glassdoor_jobs.html')
+jobs_data = extract_jobs_from_html(glassdoor_jobs_html_filepath)
 
 # add the data to the collection in object form after joining by custom_job_id
 for job in jobs_data:

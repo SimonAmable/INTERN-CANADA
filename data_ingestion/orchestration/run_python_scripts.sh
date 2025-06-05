@@ -1,13 +1,17 @@
 #!/bin/bash
 
 # Activate the virtual environment
-source /root/code/venv/bin/activate
+source ~/code/INTERN-CANADA/venv/bin/activate
 
-# Run the first Python script
-python /root/code/job__data_ingestion/data_ingestion/raw/Glassdoor/glassdoor_python.py
+# Get current date for log file naming (format: YYYYMMDD_HHMMSS)
+LOG_DATE=$(date +"%Y%m%d_%H%M%S")
+LOG_FILE="/root/code/INTERN-CANADA/data_ingestion/logs/log_${LOG_DATE}.log"
 
-# Run the second Python script
-python /root/code/job__data_ingestion/data_ingestion/clean/temp_clean.py
+# Run the first Python script and log output
+python3 /root/code/INTERN-CANADA/data_ingestion/raw/Glassdoor/glassdoor_python.py >> "$LOG_FILE" 2>&1
+
+# Run the second Python script and log output
+python3 /root/code/INTERN-CANADA/data_ingestion/clean/temp_clean.py >> "$LOG_FILE" 2>&1
 
 # Deactivate the virtual environment
 deactivate

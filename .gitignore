@@ -4,3 +4,13 @@ data_ingestion/clean/*.csv
 data_ingestion/clean/*.json
 
 venv
+
+.env
+
+*.csv
+*.json
+
+venv
+
+.log
+*.log
