@@ -2,8 +2,9 @@ import React from 'react'
 
 const MaintenenceDisclaimer = () => {
 return (
-    <div className='bg-red-700 text-white text-center p-2 bold font-bold  border-white'>
-        The site is currently under maintenance since January 25th, 2025 until I migrate to a new cloud provider with more free credits. Jobs May be old/expired. Sorry for any inconvenience.</div>
+    <div className='bg-green-600 text-white text-center p-2 bold font-bold  border-white'>
+    WE ARE FINNALY BACK, thank for visiting after such a long hiatus!!!!!!!!!!!!!!    
+    </div>
 )
 }
 

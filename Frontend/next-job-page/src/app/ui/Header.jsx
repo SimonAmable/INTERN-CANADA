@@ -2,6 +2,8 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
+import FeedbackComponent from './FeedbackComponent'
+
 const Header = () => {
   return (
     <div className='bg-primary w-full flex flex-row justify-between p-1 text-center text-black'>
@@ -31,8 +33,9 @@ const Header = () => {
           <p className='hidden lg:block'>Contribute!</p>
           <Image src='/github-icon.svg'  className="" title='Open in "GitHub"' alt='Description of the image' width={25} height={25}/>
         </a>
+        
       </div>
-
+      
 
       
     </div>
